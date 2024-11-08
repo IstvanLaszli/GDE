@@ -1,0 +1,72 @@
+{
+  "data": [
+    {
+      "company_name": "Flight Company 1",
+      "flights": [
+          {
+            "flight_nbr": "ABC-111",
+            "destination_airport": "DEST-1",
+            "max_seat_nbr": 100,
+            "ticket_price": 50,
+            "flight_type": "domestic",
+            "current_occupation": 98
+          },
+          {
+            "flight_nbr": "ABC-222",
+            "destination_airport": "DEST-2",
+            "max_seat_nbr": 50,
+            "ticket_price": 20,
+            "flight_type": "domestic"
+          },
+          {
+            "flight_nbr": "ZZZ-111",
+            "destination_airport": "DEST-4",
+            "max_seat_nbr": 200,
+            "ticket_price": 150,
+            "flight_type": "international"
+          },
+          {
+            "flight_nbr": "ZZZ-222",
+            "destination_airport": "DEST-5",
+            "max_seat_nbr": 100,
+            "ticket_price": 200,
+            "flight_type": "international"
+          }
+      ]
+    },
+    {
+      "company_name": "Flight Company 2",
+      "flights": [
+          {
+            "flight_nbr": "ABC-111",
+            "destination_airport": "DEST-1",
+            "max_seat_nbr": 100,
+            "ticket_price": 50,
+            "flight_type": "domestic",
+            "current_occupation": 98
+          },
+          {
+            "flight_nbr": "ABC-222",
+            "destination_airport": "DEST-2",
+            "max_seat_nbr": 50,
+            "ticket_price": 20,
+            "flight_type": "domestic"
+          },
+          {
+            "flight_nbr": "ZZZ-111",
+            "destination_airport": "DEST-4",
+            "max_seat_nbr": 200,
+            "ticket_price": 150,
+            "flight_type": "international"
+          },
+          {
+            "flight_nbr": "ZZZ-222",
+            "destination_airport": "DEST-5",
+            "max_seat_nbr": 100,
+            "ticket_price": 200,
+            "flight_type": "international"
+          }
+      ]
+    }
+  ]
+}
