@@ -1,4 +1,4 @@
-from idlelib.configdialog import VerticalScrolledFrame
+from src.abstract_classes.i_system import ISystem
 
 
 class Reservation:
@@ -26,15 +26,25 @@ class Reservation:
         )
 
 
-class ReservationSystem:
+class ReservationSystem(ISystem):
 
     def __init__(self, flight_system):
         self.flight_system = flight_system
         self.reservations = []
+        self.setup_reservations()
 
-    def reserve(self):
-        flight_company: str = str(input('Add flight company name:'))
-        flight_nbr: str = str(input('Add flight number:'))
+    def setup_reservations(self):
+        init_data = self.read_data("../data/reservations_data.json")
+        for data in init_data["data"]:
+            self.reserve(
+                flight_company=data["flight_company"],
+                flight_nbr=data["flight_nbr"]
+            )
+
+    def reserve(self, flight_company: str = None, flight_nbr = None):
+        if not (flight_company and flight_nbr):
+            flight_company: str = str(input('Add flight company name:'))
+            flight_nbr: str = str(input('Add flight number:'))
         flight = self.flight_system.validate_free_seats(flight_company, flight_nbr)
         flight.current_occupation += 1
         self.reservations.append(

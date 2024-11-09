@@ -6,11 +6,11 @@ def list_actions():
     print('\n',
             "1. List Flight Companies\n",
             "2. List Flights\n",
-            "3. Add Flight Company\n",
-            "4. Add Flights to Company\n",
-            "5. Reserve Ticket\n",
-            "6. Delete Reservation\n",
-            "7. List Reservations\n",
+            "3. List Reservations\n",
+            "4. Add Flight Company\n",
+            "5. Add Flights to Company\n",
+            "6. Reserve Ticket\n",
+            "7. Delete Reservation\n",
             "8. Close application\n"
     )
 
@@ -30,15 +30,15 @@ if __name__ == '__main__':
         elif action == 2:
             flight_system.list_flights()
         elif action == 3:
-            flight_system.add_flight_company()
-        elif action == 4:
-            flight_system.add_flights()
-        elif action == 5:
-            reservation_system.reserve()
-        elif action == 6:
-            reservation_system.delete_reservation()
-        elif action == 7:
             reservation_system.list_reservations()
+        elif action == 4:
+            flight_system.add_flight_company()
+        elif action == 5:
+            flight_system.add_flights()
+        elif action == 6:
+            reservation_system.reserve()
+        elif action == 7:
+            reservation_system.delete_reservation()
         elif action == 8:
             break
         else:
