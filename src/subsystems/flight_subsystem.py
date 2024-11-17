@@ -17,7 +17,7 @@ class FlightSystem(ISystem):
         self.setup_flights()
 
     def setup_flights(self):
-        init_data = self.read_data("../data/flights_data.json")
+        init_data = self.read_data("./data/flights_data.json")
         for data in init_data["data"]:
             self.add_flight_company(data["company_name"])
             for flight in data["flights"]:

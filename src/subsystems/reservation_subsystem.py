@@ -34,7 +34,7 @@ class ReservationSystem(ISystem):
         self.setup_reservations()
 
     def setup_reservations(self):
-        init_data = self.read_data("../data/reservations_data.json")
+        init_data = self.read_data("./data/reservations_data.json")
         for data in init_data["data"]:
             self.reserve(
                 flight_company=data["flight_company"],
