@@ -1,5 +1,5 @@
-from src.user_interface.system_setup import FlightSystem
-from src.user_interface.reservation import ReservationSystem
+from src.user_interface.flight_subsystem import FlightSystem
+from src.user_interface.reservation_subsystem import ReservationSystem
 
 
 def list_actions():

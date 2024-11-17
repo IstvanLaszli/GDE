@@ -48,7 +48,7 @@ class FlightSystem(ISystem):
             destination_airport: str = None,
             max_seat_nbr: int = None,
             ticket_price: int = None,
-            current_occupation: int = None):
+            current_occupation: int = 0):
         if not (
                 company_name
                 and flight_type
